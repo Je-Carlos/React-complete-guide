@@ -10,5 +10,8 @@ html {
 
 body {
   margin: 0;
-  background-color: #2b2730;
+  background-color: #111111;
+}
+div {
+  color: #f1f1f1;
 }
