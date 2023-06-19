@@ -1,6 +1,7 @@
-import Expenses from "./components/Expenses";
+// import React from "react";
+import Expenses from "./components/Expenses/Expenses";
 
-function App() {
+const App = () => {
   const expenses = [
     { id: "e1", title: "Teclado", amount: 144.9, date: new Date(2023, 6, 17) },
     {
@@ -17,11 +18,20 @@ function App() {
     },
     { id: "e4", title: "Tênis", amount: 129.99, date: new Date(2023, 3, 2) },
   ];
+
+  // Como funciona o React por baixo dos panos, sem utilizar a sintexe de JSX (Nessário fazer o import React)
+  // return React.createElement(
+  //   "div",
+  //   {},
+  //   React.createElement("h2", {}, "Let's get started!"),
+  //   React.createElement(Expenses, { items: expenses })
+  // );
+
   return (
     <div>
       <Expenses items={expenses} />
     </div>
   );
-}
+};
 
 export default App;

@@ -1,8 +1,8 @@
 import "./ExpenseDate.css";
 
-function ExpenseDate(props) {
+const ExpenseDate = (props) => {
   // formatando mês de 1 - 12
-  function formatedMonth(oldDate) {
+  const formatedMonth = (oldDate) => {
     const date = new Date(oldDate);
     const monthNames = [
       "Janeiro",
@@ -19,7 +19,7 @@ function ExpenseDate(props) {
       "Dezembro",
     ];
     return monthNames[date.getMonth() - 1];
-  }
+  };
   const day = props.date.toLocaleString("pt-BR", { day: "2-digit" });
   const year = props.date.getFullYear();
   return (
@@ -29,5 +29,5 @@ function ExpenseDate(props) {
       <div className="expense-date__year">{year}</div>
     </div>
   );
-}
+};
 export default ExpenseDate;
