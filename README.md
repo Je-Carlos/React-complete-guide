@@ -9,8 +9,9 @@
 
 ## Tópicos de Estudo
 
-1. [Componentes Básicos do React e como funcionam](https://github.com/Je-Carlos/React-complete-guide/tree/main/1-react-basics-and-components)
+1. [Componentes básicos do React e como funcionam](https://github.com/Je-Carlos/React-complete-guide/tree/main/1-react-basics-and-components)
 2. [Exercício prático para criar componentes e utilizar props](https://github.com/Je-Carlos/React-complete-guide/tree/main/2-practicing-components-basics)
+3. [Lidando com React State e Events](https://github.com/Je-Carlos/React-complete-guide/tree/main/3-react-state-and-events)
 
 Fique à vontade para explorar cada tópico e acompanhar meu progresso neste repositório. Os links direcionam para as pastas correspondentes aos estudos específicos. Sinta-se à vontade para contribuir com sugestões, correções ou melhorias!
 
