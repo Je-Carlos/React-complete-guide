@@ -1,43 +1,51 @@
-import keyConceptsImage from './assets/images/key-concepts.png';
-import componentsImage from './assets/images/components.png';
-import stateImage from './assets/images/state.png';
-import eventsImage from './assets/images/events.png';
+import keyConceptsImage from "./assets/images/key-concepts.png";
+import componentsImage from "./assets/images/components.png";
+import stateImage from "./assets/images/state.png";
+import eventsImage from "./assets/images/events.png";
+import ConceptsMenu from "./assets/ConceptsMenu";
+import ConceptsHeader from "./assets/ConceptsHeader";
 
 const concepts = [
   {
-    title: 'Components',
+    title: "Components",
     image: componentsImage,
     description:
-      'Components let you split the UI into independent, reusable pieces, and think about each piece in isolation. Components can receive data via props, and they can render dynamic output using JSX.',
+      "Componentes permitem dividir a interface do usuário em partes independentes e reutilizáveis, e pensar em cada parte de forma isolada. Os componentes podem receber dados através de props e podem renderizar saída dinâmica usando JSX.",
   },
   {
-    title: 'State',
+    title: "State",
     image: stateImage,
     description:
-      'State is data that may change over time. As it changes, the UI should be updated to reflect the updated data. Each component can maintain its own state and multiple components can share state.',
+      "State é um conjunto de dados que pode mudar ao longo do tempo. Conforme ele é alterado, a interface do usuário deve ser atualizada para refletir os dados atualizados. Cada componente pode manter seu próprio estado e vários componentes podem compartilhar o mesmo estado.",
   },
   {
-    title: 'Events',
+    title: "Events",
     image: eventsImage,
     description:
-      'Event handlers are added via props to (built-in) components. You pass functions as values to such event handlers to control which functions gets executed for which event.',
+      "Manipuladores de eventos são adicionados por meio de props aos componentes (integrados). Você passa funções como valores para esses manipuladores de eventos para controlar quais funções são executadas para quais eventos.",
   },
 ];
 
 function App() {
   return (
     <div>
-      <header>
-        <img src={keyConceptsImage} alt="Medal badge with a star" />
-        <h1>Key React Concepts</h1>
-        <p>Selected key React concepts you should know about</p>
-      </header>
+      <ConceptsHeader img={keyConceptsImage} />
       <ul id="concepts">
-        <li className="concept">
-          <img src="TODO: IMAGE" alt="TODO: TITLE" />
-          <h2>TODO: TITLE</h2>
-          <p>TODO: DESCRIPTION</p>
-        </li>
+        <ConceptsMenu
+          title={concepts[0].title}
+          img={concepts[0].image}
+          description={concepts[0].description}
+        />
+        <ConceptsMenu
+          title={concepts[1].title}
+          img={concepts[1].image}
+          description={concepts[1].description}
+        />
+        <ConceptsMenu
+          title={concepts[2].title}
+          img={concepts[2].image}
+          description={concepts[2].description}
+        />
       </ul>
     </div>
   );
