@@ -1,5 +1,6 @@
 <h1 align="center"> React - Complete Guide </h1>
-<p align="center">Estarei publicando neste repositório meus exercícios, anotações e estudos sobre React, React-Hooks e Redux.</p>
+<p align="center">
+Este repositório é dedicado ao compartilhamento dos meus estudos e aprendizados em React. Aqui você encontrará uma coleção de projetos, exemplos de código, anotações e recursos relacionados ao desenvolvimento com React. Acompanhe minha jornada de aprendizado enquanto exploro os conceitos fundamentais, a sintaxe, as melhores práticas e as técnicas avançadas em React. Sinta-se à vontade para explorar, contribuir e aproveitar esse espaço para expandir seus conhecimentos em React junto comigo!</p>
   <p align="center">
 <!--     <a href="">Project</a> - -->
     <a href="https://react.dev/learn" rel="noopener" target="_blank">Documentação</a>
