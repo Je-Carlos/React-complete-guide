@@ -32,7 +32,6 @@ const App = () => {
     <div>
       <NewExpense />
       <Expenses items={expenses} />
-      console.log("App.js");
     </div>
   );
 };
