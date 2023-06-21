@@ -41,6 +41,18 @@ const ExpenseForm = () => {
     --------------------------------------------------------------------------------
     */
   };
+  /*  Outra forma de poder receber os valores dos inputs, é passando um identificador
+      para a função e usando um if para verificar qual input está sendo alterado.
+      
+   const inputChangeHandler = (identifier, value) => {
+     if (identifier === "title") {
+       setEnteredTitle(value);
+     } else if (identifier === "amount") {
+       setEnteredNumber(value);
+     } else if (identifier === "date") {
+       setEnteredDate(value);
+     }
+   }; */
 
   return (
     <form action="">
@@ -48,6 +60,8 @@ const ExpenseForm = () => {
         <div className="new-expense__control">
           <label>Despesa</label>
           <input type="text" onChange={titleChangeHandler} />
+          {/* Também pode ser feito assim: 
+          onChange={(event) => inputChangeHandler("title", event.target.value)} */}
         </div>
 
         <div className="new-expense__control">
