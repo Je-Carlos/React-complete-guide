@@ -5,7 +5,7 @@ import Card from "../UI/Card";
 import ExpensesFilter from "./ExpenseFilter";
 
 const Expenses = (props) => {
-  const year = new Date().getFullYear();
+  const year = new Date().getFullYear().toString();
   const [filteredYear, setFilteredYear] = useState(year);
   // let filterInfoText = "2021, 2022, 2024 e 2025";
   // if (filteredYear === "2022") {
@@ -20,6 +20,10 @@ const Expenses = (props) => {
   const filterHandler = (year) => {
     setFilteredYear(year);
   };
+
+  const filteredExpenses = props.items.filter((expenses) => {
+    return expenses.date.getFullYear().toString() === filteredYear;
+  });
   return (
     <div>
       <Card className="expenses">
@@ -27,7 +31,7 @@ const Expenses = (props) => {
           onSelectedYear={filteredYear}
           onFilterYear={filterHandler}
         />
-        {props.items.map((expenses) => (
+        {filteredExpenses.map((expenses) => (
           <ExpenseItem
             key={expenses.id}
             title={expenses.title}
