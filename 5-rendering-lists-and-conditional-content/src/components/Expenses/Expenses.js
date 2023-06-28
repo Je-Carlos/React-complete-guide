@@ -5,7 +5,8 @@ import Card from "../UI/Card";
 import ExpensesFilter from "./ExpenseFilter";
 
 const Expenses = (props) => {
-  const [filteredYear, setFilteredYear] = useState("2023");
+  const year = new Date().getFullYear();
+  const [filteredYear, setFilteredYear] = useState(year);
   // let filterInfoText = "2021, 2022, 2024 e 2025";
   // if (filteredYear === "2022") {
   //   filterInfoText = "2021, 2023, 2024 e 2025";
