@@ -17,7 +17,7 @@ const ExpenseItem = (props) => {
       <div className="expense-item__description">
         <h2>{props.title}</h2>
       </div>
-      <div className="expense-item__price">R$ {props.amount.toFixed(2)}</div>
+      <div className="expense-item__price">R$ {props.amount}</div>
       {/* <button onClick={clickHandler}>Change Title</button> */}
     </Card>
   );
