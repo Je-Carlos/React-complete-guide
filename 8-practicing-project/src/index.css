@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Merriweather", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background-color: #40407a; */
+  /* background: radial-gradient(#40407a, #6767c7); */
+  background: radial-gradient(#252547, #252547);
+  color: #f1f1f1;
+}
+
+.form {
+  padding: 1rem;
+  max-width: 30rem;
+  margin: 2rem auto;
+  border-radius: 6px;
+  background: linear-gradient(180deg, #40407a, #6767c7);
+}
+
+.input-group {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1.5rem;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-size: 0.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.form input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ababd0;
+  border-radius: 0.25rem;
+  background-color: transparent;
+  color: #f1f1f1;
+  font-size: 1rem;
+}
+.form input:focus {
+  outline: none;
+  border-color: #c2e9e0;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  background: linear-gradient(180deg, #3b3b47, #24242c);
+  color: #f1f1f1;
+  font-family: "Merriweather", serif;
+  cursor: pointer;
+}
+
+.buttonAlt {
+  font-family: "Merriweather", serif;
+  border: none;
+  background: transparent;
+  color: #f1f1f1;
+  cursor: pointer;
+}
+
+button:hover {
+  background: linear-gradient(180deg, #3e3e78, #242445);
+  color: #c2e9e0;
+}
+
+.buttonAlt:hover {
+  background: transparent;
+  color: #c2e9e0;
+}
+
+.result {
+  max-width: 50rem;
+  margin: 2rem auto;
+  padding: 1rem;
+  table-layout: fixed;
+  border-spacing: 1rem;
+  text-align: right;
+}
+
+.result thead {
+  font-size: 0.7rem;
+  color: #6767c7;
+}
+
+.result tbody {
+  font-family: "Merriweather", serif;
+  font-size: 0.85rem;
+  color: #c2e9e0;
+}
