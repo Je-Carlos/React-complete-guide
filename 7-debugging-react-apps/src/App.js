@@ -13,7 +13,11 @@ const App = () => {
   const addGoalHandler = (enteredText) => {
     setCourseGoals((prevGoals) => {
       const updatedGoals = [...prevGoals];
-      updatedGoals.unshift({ text: enteredText, id: "goal1" });
+      updatedGoals.unshift({
+        text: enteredText,
+        // Utilizei o debugger para encontre aonde ficava o erro de duplicação de id
+        id: "g" + (Math.random() * 10).toString(),
+      });
       return updatedGoals;
     });
   };
