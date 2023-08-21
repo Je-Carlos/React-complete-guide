@@ -15,6 +15,7 @@
 4. [React State e como trabalhar com Eventos](https://github.com/Je-Carlos/React-complete-guide/tree/main/3%2C%204%20-react-state-and-events)
 5. [Renderizando listas e Contéudo Condicional](https://github.com/Je-Carlos/React-complete-guide/tree/main/5-rendering-lists-and-conditional-content)
 6. [Estilizando componentes através do React](https://github.com/Je-Carlos/React-complete-guide/tree/main/6-styling-react-components)
+7. [Debbuging através do React](https://github.com/Je-Carlos/React-complete-guide/tree/main/7-debugging-react-apps)
 
 Fique à vontade para explorar cada tópico e acompanhar meu progresso neste repositório. Os links direcionam para as pastas correspondentes aos estudos específicos. Sinta-se à vontade para contribuir com sugestões, correções ou melhorias!
 
